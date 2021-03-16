@@ -1,0 +1,29 @@
+.profile-overlay {
+    left: 0 !important;
+    top: 0 !important;
+    z-index: 10000 !important;
+    width: 100% !important;
+    height: 100% !important;
+    position: absolute !important;
+    background-color: #fcbcb87e !important;
+    cursor: pointer !important;
+    visibility: visible !important;
+    border-radius: 15px;
+    /* transition: visibility 1s, opacity 1s linear !important; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: wait !important;
+    animation: fadeout 500ms;
+    -webkit-animation: fadeOut 500ms;
+    -moz-animation: fadeOut 500ms;
+}
+.profile-overlay i.fa.fa-spinner.fa-spin, .spinner-big {
+    font-size: 50px !important;
+    color: white;
+}
+
+@keyframes fadeOut {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}

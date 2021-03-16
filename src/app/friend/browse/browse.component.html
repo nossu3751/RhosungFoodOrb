@@ -1,0 +1,40 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="card w-100" style="background-color: #fcbcb8; border-radius: 20px 20px 20px 20px">
+    <div class="card-header" style="border-radius: 20px 20px 0 0">
+        <div class="row">
+            <div class="col-4 my-auto">
+                <h5 class="my-auto" style="font-weight: bold; color:white">Find Friend</h5> 
+            </div>
+            <div class="col-8">
+                <input [(ngModel)]="searchText" type="text" class="form-control" placeholder="&#xF002;  Search people..."style="font-family:Arial, FontAwesome">
+            </div>
+        </div>
+        
+    </div>
+   
+    <ul style="list-style-type: none; background-color: transparent; max-height:600px; min-height:600px" class="w-100 list-group overflow-auto">
+        <li *ngFor="let u of filterSearch(searchText)" style="background-color: transparent; border:none;"class="pt-2 pb-2 w-100 list-group-item">
+            <div class="card w-100" style="border-radius: 15px;">
+                <div class="card-body" style="border-radius: 15px;">
+                    <div class="row">
+                        <div class="col-9">
+                            <h5 class="card-title">{{u.name}}</h5>
+                            <small> {{u.email}}</small>
+                        </div>
+                        <div class="col-3 my-auto">
+                            <button *ngIf="true" (click)="friendRequest(u)" class="btn btn-sm btn-outline-secondary">
+                                <i class="fa fa-plus"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+        
+    <div class="card-body" style="border-radius: 0 0 20px 20px ">
+
+    </div>
+    
+</div>

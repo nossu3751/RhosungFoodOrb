@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-4">
+            <ul class="list-group" style="border-radius: 15px 15px 15px 15px">
+                <li (click)="profile()" style="background-color: #fcbcb8; cursor:pointer;"class="list-group-item pt-4 pb-4">
+                    <h6 style="font-weight: bold; color: white" class="my-auto">Edit Profile</h6>
+                </li>
+                <li (click)="track()" style="background-color: #fcbcb8; cursor:pointer"class="list-group-item pt-4 pb-4">
+                    <h6 style="font-weight: bold; color: white" class="my-auto">Track Order</h6>
+                </li>
+                <li (click)="payment()" style="background-color: #fcbcb8; cursor:pointer"class="list-group-item pt-4 pb-4">
+                    <h6 style="font-weight: bold; color: white" class="my-auto">Payment</h6>
+                </li>
+            </ul>
+        </div>
+        <div class="col-8">
+            <div class="card w-100" style="border-radius: 15px 15px 15px 15px;">
+                <div class="card-header" style="border-radius: 15px 15px 0 0;">
+                  <h5 class="my-auto" style="color:gray">{{page}}</h5>
+                </div>
+                <div class="card-body" style="border-radius: 0 0 15px 15px;">
+                    <ng-container *ngIf="page==='Profile'">
+                        <app-profile class="w-100"></app-profile>
+                    </ng-container>
+                    <ng-container *ngIf="page==='Track'">
+                        <app-track class="w-100"></app-track>
+                    </ng-container>
+                    <ng-container *ngIf="page==='Payment'">
+                        Payment Page
+                    </ng-container>
+                    
+                </div>
+              </div>
+        </div>
+    </div>
+</div>

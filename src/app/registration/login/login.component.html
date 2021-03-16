@@ -1,0 +1,35 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<div class="login-form">
+    <form [formGroup] = "logInModel" (ngSubmit) = "logInModel.valid && logInUser()">
+        <h2 class="text-center">Sign In</h2>  
+        <div class="form-group">
+        <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">
+                        <span class="fa fa-user"></span>
+                    </span>                    
+                </div>
+                <input formControlName="email" type="email" class="form-control" name="email" placeholder="Email" required="required">
+            </div>
+        </div>
+<div class="form-group">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">
+                        <i class="fa fa-lock"></i>
+                    </span>                    
+                </div>
+                <input formControlName="password" type="password" class="form-control" id="password" name="password" placeholder="Password">
+            </div>
+        </div>        
+        <div class="form-group">
+            <div class="row justify-content-center">
+                <br><small style="color:rgb(207, 83, 83)">{{errorMsg}}</small><br>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Log in</button>
+        </div>     
+    </form>
+    <p class="text-center small">Don't have an account! <a href="#"style="color:#fcbcb8">Sign up here</a>.</p>
+</div>

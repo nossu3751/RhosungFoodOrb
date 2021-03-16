@@ -1,0 +1,58 @@
+<div class="card w-100 my-3" style="border-radius: 15px 15px 15px 15px;">
+    <div class="card-body">
+        <div class="row">
+            <div class="col-8">
+                <h5 class="card-title"> {{trackDetail?.name}} </h5>
+                <h6 class="card-subtitle mb-2 text-muted">{{trackDetail?.restaurent_name}} </h6><br>
+                <ng-container *ngIf="status !== 'Delivered!' && status !== 'DELIVERED'">
+                    <button class="btn btn-secondary btn-sm" (click)="open(cancel_order)">
+                        Cancel Order
+                    </button>
+                </ng-container>
+            </div>
+            <div class="col-4 my-auto" style="text-align: center;">
+                <div style="display:inline-block" class="my-auto">
+                    <div class="row justify-content-center" style="font-weight: bold;">
+                        {{status}}
+                        <small style="color:grey" *ngIf="status !== 'DELIVERED'"> Time left ... {{timeLeft}} </small>
+                    </div>
+                    <ng-container *ngIf="status !== 'DELIVERED'">
+                        <div class="row justify-content-center">
+                            <i class="fa fa-circle-o-notch fa-spin mt-3" aria-hidden="true" style="color:#fcbcb8; font-size:25px"></i>
+                        </div>
+                    </ng-container>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<ng-template #cancel_order let-modal>
+    <div class="modal-header" style="background-color: #fcbcb8; color:white">
+      <h5 class="modal-title" id="modal-basic-title">Do you really want to cancel this order?</h5>
+      <button type="button" class="close" aria-label="Close" (click)="[modal.dismiss('Cross click')]">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+        <div class="container">
+            <div class="row mt-2">   
+                <div class="col">
+                    <h5>{{trackDetail?.restaurent_name}}</h5>
+                    <h6>{{trackDetail?.name}}</h6>
+                    <small style="color:#ff8981">price: {{trackDetail?.item_cost | currency:"INR":"symbol"}}</small>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <div class="row w-100">
+            <div class="col" style="text-align: right;">
+                <button type="button" class="btn btn-secondary btn-block" (click)="[cancelOrder(),modal.close('Save click')]">
+                    Yes. I do not want this food anymore.
+                </button>
+            </div>
+        </div>
+    </div>
+</ng-template>

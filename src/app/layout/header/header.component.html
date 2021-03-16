@@ -1,0 +1,73 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div style="width:100vw; position: relative; height: 50px; background-color: #83bdbd">
+    <div class="container">
+        <div class = "row">
+            <div class="col" style="text-align: left;">
+                <div (click)="goHome()" style="cursor:pointer; color:white; font-size: 30px; text-align: center; left: 0; top:0; width: 200px; font-weight: bold;"> 
+                    <span style="color:lightgrey">Rhosung</span><span>Food</span><span style="color:#fcbcb8;">Orb</span>
+                </div>
+            </div>
+            <div class="col" style="text-align: right;" *ngIf="currUser != null ; else buttonView">
+                
+                <div ngbDropdown placement="bottom-right" class="d-inline-block">
+                    <button class="btn" id="dropdownBasic1" ngbDropdownToggle>
+                        <span class="mt-2 pt-1" style="font-weight: bold; color:#fcbcb8;">Hello, </span> <span style="color:white; font-weight: bold;">{{currUser.name}} </span>
+                    </button>
+                    <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                        <button ngbDropdownItem (click)="goToCart()">
+                            <div class="row">
+                                <div class="col-9">
+                                    Your Cart
+                                </div>
+                                <div class="col-3">
+                                    <i class="fa fa-shopping-cart" style="color:#dd6f67;"></i>
+                                </div>
+                            </div>
+                        </button>
+                        <button (click)="goToFriendList()" ngbDropdownItem>
+                            <div class="row">
+                                <div class="col-9">
+                                    Friends
+                                </div>
+                                <div class="col-3">
+                                    <i class="fa fa-users" style="color:#dd6f67;"></i>
+                                </div>
+                            </div>
+                        </button>
+                        <button (click)="goToSettings()" ngbDropdownItem>
+                            <div class="row">
+                                <div class="col-9">
+                                    Settings
+                                </div>
+                                <div class="col-3">
+                                    <i class="fa fa-sliders" style="color:#dd6f67;"></i>
+                                </div>
+                            </div>
+                        </button>
+                        <div class="dropdown-divider"></div>
+                        <button (click)="logOutUser()" ngbDropdownItem>
+                            <div class="row">
+                                <div class="col-9">
+                                    Logout
+                                </div>
+                                <div class="col-3">
+                                    <i class="fa fa-sign-out" style="color:#dd6f67;"></i>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                  </div>
+                
+                
+            </div>
+            <ng-template #buttonView>
+                <button (click)= "goToSignUpPage()" class="btn btn-dark mr-2 mt-1" style="display:inline-block; "> Sign Up</button>
+                <button (click) ="goToLogInPage()" class="btn btn-secondary mt-1" style="display:inline-block"> Sign In</button>
+            </ng-template>
+        </div>
+    
+    </div>
+    
+</div>
+

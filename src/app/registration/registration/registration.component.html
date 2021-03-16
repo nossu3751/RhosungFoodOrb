@@ -1,0 +1,33 @@
+<div class="signup-form">
+    <form [formGroup] = "regUserModel" (ngSubmit) = "addUser()">
+        <h2>Register</h2>
+        <p class="hint-text">Please Sign Up</p>
+        <div class="form-group">
+            <div class="row">
+                <div class="col"><input formControlName="firstName" type="text" class="form-control" name="first_name" placeholder="First Name"
+                        required="required"></div>
+                <div class="col"><input formControlName="lastName" type="text" class="form-control" name="last_name" placeholder="Last Name"
+                        required="required"></div>
+            </div>
+        </div>
+        <div class="form-group">
+            <input formControlName="email" type="email" class="form-control" name="email" placeholder="Email" required="required">
+            <br>{{errorMsg}}<br>
+        </div>
+        <div class="form-group">
+            <input formControlName="phone" type="tel" class="form-control" name="phone" placeholder="phone" required="required">
+        </div>
+        <div class="row" formGroupName="passwordsGroup">
+            <div class = "form-group col">
+                <input formControlName="password" type="password" class="form-control" id="password" name="password" placeholder="Password">
+            </div>
+            <div class = "form-group col">
+                <input formControlName="cpassword" type="password" class="form-control" id="cpassword" name="cpassword" placeholder="Confirm Password">
+            </div>
+        </div>
+        <div class="form-group">
+            <button type="submit" style="background-color: #fcbcb8;" class="btn btn-success btn-lg btn-block">Register Now</button>
+        </div>
+    </form>
+    <div class="text-center">Already have an account? <a href="#">Sign in</a></div>
+</div>

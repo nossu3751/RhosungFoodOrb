@@ -1,0 +1,4 @@
+li:hover{
+    background-color: #ffdddb!important;
+    transition: background-color 0.5s !important;
+}

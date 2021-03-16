@@ -1,0 +1,75 @@
+<div class="container">
+    <div class="row">
+        <div class="col-7">
+            <div class="card w-100" style="background-color: rgb(180, 180, 180); border-radius: 20px 20px 20px 20px">
+                <div class="card-header" style="border-radius: 20px 20px 0 0">
+                    <div class="row">
+                        <div class="col">
+                            <h5 class="my-auto" style="font-weight: bold; color:white">Friends</h5> 
+                        </div>
+                    </div>
+
+                    
+                </div>
+               
+                <ul style="background-color: transparent; max-height:600px; min-height:600px" class="w-100 h-100 list-group list-group-flush overflow-auto">
+                    <li class="list-group-item" style="background-color:transparent">
+                        <h6 class="my-auto" style="font-weight: bold; color:#ffdcda;">Request Received</h6> <br>
+                        <ul class="list-group">
+                            <li style="background-color: transparent;" class="list-group-item" *ngFor="let f of requestReceivedList | async">
+                                <div class="row">
+                                    <div class="col-9">
+                                        <h5 class="card-title">{{f.name}}</h5>
+                                        <small> {{f.email}}</small>
+                                    </div>
+                                    <div class="col-3 my-auto">
+                                        <button class="btn btn-sm" (click)="approveRequest(currUser, f)" style="background-color:#ff9c97; color:white;">
+                                            Accept <i class="fa fa-check" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="list-group-item" style="background-color:transparent">
+                        <h6 class="my-auto" style="font-weight: bold; color:#ffdcda;">Your Friends</h6> <br>
+                        <ul class="list-group">
+                            <li style="background-color: transparent;"class="list-group-item" *ngFor="let f of friendList | async">
+                                <div class="row">
+                                    <div class="col">
+                                        <h5 class="card-title">{{f.name}}</h5>
+                                        <small> {{f.email}}</small>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="list-group-item" style="background-color:transparent">
+                        <h6 class="my-auto" style="font-weight: bold; color:#ffdcda;">Request Sent</h6> <br>
+                        <ul class="list-group">
+                            <li style="background-color: transparent;"class="list-group-item" *ngFor="let f of requestSentList | async">
+                                <div class="row">
+                                    <div class="col-9">
+                                        <h5 class="card-title">{{f.name}}</h5>
+                                        <small> {{f.email}}</small>
+                                    </div>
+                                    <div class="col-3">
+                                        <small style="color:gray; font-style:italic"> Pending Approval...</small>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                    
+                <div class="card-body" style="border-radius: 0 0 20px 20px ">
+            
+                </div>
+                
+            </div>
+        </div>
+        <div class="col-5">
+            <app-browse class="w-100" (reloadSentRequest)="reloadSentRequest($event)"></app-browse>
+        </div>
+    </div>
+</div>
