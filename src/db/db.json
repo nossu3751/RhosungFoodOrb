@@ -1,0 +1,696 @@
+{
+  "feed": [
+    {
+      "id": 1,
+      "created_at": "2020-04-26T17:08:41.000000Z",
+      "updated_at": "2020-04-26T17:08:41.000000Z",
+      "restaurent_name": "Reddys Biryani Zone",
+      "rating": "4.0",
+      "description": "Indian",
+      "name": "Roasted Chicken Biryani",
+      "image_url": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/ylkrbzvqollrxfc5kp53",
+      "cost": "190"
+    },
+    {
+      "id": 2,
+      "created_at": "2020-04-26T17:08:41.000000Z",
+      "updated_at": "2020-04-26T17:08:41.000000Z",
+      "restaurent_name": "Mad Momos",
+      "rating": "3.8",
+      "description": "Indian",
+      "name": "Chicken Momos",
+      "image_url": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_366,h_240,c_fill/jjvieg2ytl9l0y0fhtri",
+      "cost": "69"
+    },
+    {
+      "id": 3,
+      "created_at": "2020-04-26T17:08:41.000000Z",
+      "updated_at": "2020-04-26T17:08:41.000000Z",
+      "restaurent_name": "Kabablo",
+      "rating": "3.2",
+      "description": "Indian",
+      "name": "Cajun Spiced Chicken",
+      "image_url": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_366,h_240,c_fill/vx4uld2hyksrrlrmqpmg",
+      "cost": "260"
+    },
+    {
+      "id": 4,
+      "created_at": "2020-04-26T17:08:41.000000Z",
+      "updated_at": "2020-04-26T17:08:41.000000Z",
+      "restaurent_name": "Mandarin Oak",
+      "rating": "4.0",
+      "description": "Asian, Chinese, Thai",
+      "name": "Steamed Chicken Dumplings",
+      "image_url": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_366,h_240,c_fill/j0uxiukml9jzpxvxbt0w",
+      "cost": "150"
+    },
+    {
+      "id": 5,
+      "created_at": "2020-04-26T17:08:41.000000Z",
+      "updated_at": "2020-04-26T17:08:41.000000Z",
+      "restaurent_name": "The Good Bowl",
+      "rating": "3.0",
+      "description": "Fast Food, North Indian",
+      "name": "Immunity Booster Chole Rice Bowl",
+      "image_url": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_366,h_240,c_fill/nqw2klwsqyfnjow5x2fy",
+      "cost": "200"
+    },
+    {
+      "id": 6,
+      "created_at": "2020-04-26T17:08:41.000000Z",
+      "updated_at": "2020-04-26T17:08:41.000000Z",
+      "restaurent_name": "Cafe Peter",
+      "rating": "3.7",
+      "description": "Korean, Continental, Bakery",
+      "name": "Cheese Chilli Toast",
+      "image_url": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_366,h_240,c_fill/wjfwo0mpmfs7fub7ykvp",
+      "cost": "250"
+    },
+    {
+      "id": 7,
+      "created_at": "2020-04-26T17:08:41.000000Z",
+      "updated_at": "2020-04-26T17:08:41.000000Z",
+      "restaurent_name": "Home Kitchen Services",
+      "rating": "4.5",
+      "description": "North Indian",
+      "name": "Chicken Fry",
+      "image_url": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_366,h_240,c_fill/yktmfporzgu0jatkevqr",
+      "cost": "125"
+    },
+    {
+      "id": 8,
+      "created_at": "2020-04-26T17:08:41.000000Z",
+      "updated_at": "2020-04-26T17:08:41.000000Z",
+      "restaurent_name": "Hotel Malabar",
+      "rating": "4.3",
+      "description": "Chinese, North Indian",
+      "name": "Chicken Pakora",
+      "image_url": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_366,h_240,c_fill/gjuhuccffbwnonxanyl9",
+      "cost": "145"
+    },
+    {
+      "id": 9,
+      "created_at": "2020-04-26T17:08:41.000000Z",
+      "updated_at": "2020-04-26T17:08:41.000000Z",
+      "restaurent_name": "Hotel Shalimar",
+      "rating": "3.2",
+      "description": "Indian",
+      "name": "Chicken Dry Fry",
+      "image_url": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_366,h_240,c_fill/d59qdvgdq2caad7nhipx",
+      "cost": "100"
+    },
+    {
+      "id": 10,
+      "created_at": "2020-04-26T17:08:41.000000Z",
+      "updated_at": "2020-04-26T17:08:41.000000Z",
+      "restaurent_name": "Tandoor Point",
+      "rating": "3.0",
+      "description": "Mughlai, North Indian, Chinese",
+      "name": "Chicken Kadai",
+      "image_url": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_366,h_240,c_fill/onlp7ojjmh1qhivm0yxv",
+      "cost": "230"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "John Yadav",
+      "email": "iamjohnyadav@gmail.com",
+      "email_verified_at": null,
+      "created_at": "2020-04-26T17:02:45.000000Z",
+      "updated_at": "2020-04-27T15:05:19.000000Z",
+      "api_token": "ZQmAInGvpKxMntjdJf7Oa2toA0hp3mabCMPmjuI8P2RqHloZbnolFC19h3OI"
+    },
+    {
+      "id": 2,
+      "name": "John",
+      "email": "john.doe@gmail.com",
+      "email_verified_at": null,
+      "created_at": "2020-04-27T14:59:21.000000Z",
+      "updated_at": "2020-04-27T14:59:21.000000Z",
+      "api_token": null
+    },
+    {
+      "id": 3,
+      "name": "John",
+      "email": "john.doe1@gmail.com",
+      "email_verified_at": null,
+      "created_at": "2020-04-27T15:19:12.000000Z",
+      "updated_at": "2020-04-27T15:19:12.000000Z",
+      "api_token": null
+    },
+    {
+      "id": 4,
+      "name": "John",
+      "email": "john.doe11@gmail.com",
+      "email_verified_at": null,
+      "created_at": "2020-04-27T15:23:27.000000Z",
+      "updated_at": "2020-04-27T15:23:27.000000Z",
+      "api_token": "nixEZW06CB9b3QWxGXpKSZnXylYwVVulXOXBrwaBkXw6aIyFBTgV1jjRYJkj"
+    },
+    {
+      "id": 5,
+      "name": "Mangesh Sunil Narkhede",
+      "email": "mangeshnarkhede.ai@gmail.com",
+      "email_verified_at": null,
+      "created_at": "2020-05-04T04:20:34.000000Z",
+      "updated_at": "2020-05-04T04:51:14.000000Z",
+      "api_token": "KnsWA4qLDblh4OIzM3i3UK4g2IQqCzKqEQs866DphGT2oYJEowfPGgGplrbO"
+    },
+    {
+      "id": 6,
+      "name": "Edureka",
+      "email": "admin@edureka.com",
+      "email_verified_at": null,
+      "created_at": "2020-05-04T04:52:42.000000Z",
+      "updated_at": "2020-05-14T04:50:56.000000Z",
+      "api_token": "0Eb4Mz019wCrBs55iZXVTxZVATpUvcjumcUdPyoLvTDhGA97JzLipDQYGl58"
+    },
+    {
+      "id": 7,
+      "name": "Hello World",
+      "email": "helloworld@gmail.com",
+      "email_verified_at": "FoodOrb",
+      "created_at": "13:25:18 GMT-0800 (Pacific Standard Time)",
+      "updated_at": "13:25:18 GMT-0800 (Pacific Standard Time)",
+      "api_token": "",
+      "phone": "1111111111"
+    },
+    {
+      "id": 8,
+      "name": "dfdfd dfdfdf",
+      "email": "sss@gmail.com",
+      "email_verified_at": "FoodOrb",
+      "created_at": "13:36:23 GMT-0800 (Pacific Standard Time)",
+      "updated_at": "13:36:23 GMT-0800 (Pacific Standard Time)",
+      "api_token": "",
+      "phone": "1234567890"
+    },
+    {
+      "id": 9,
+      "name": "dummy data",
+      "email": "dummy@gmail.com",
+      "email_verified_at": "FoodOrb",
+      "created_at": "13:40:46 GMT-0800 (Pacific Standard Time)",
+      "updated_at": "13:40:46 GMT-0800 (Pacific Standard Time)",
+      "api_token": "",
+      "phone": "1234567890"
+    },
+    {
+      "id": 10,
+      "name": "ssdfsd sdfdsf",
+      "email": "ssdf@ggg.com",
+      "email_verified_at": "FoodOrb",
+      "created_at": "13:50:53 GMT-0800 (Pacific Standard Time)",
+      "updated_at": "13:50:53 GMT-0800 (Pacific Standard Time)",
+      "api_token": "",
+      "phone": "0987654321",
+      "p": "12345"
+    },
+    {
+      "id": 11,
+      "name": "12345 12345",
+      "email": "12345@gmail.com",
+      "email_verified_at": "FoodOrb",
+      "created_at": "13:52:47 GMT-0800 (Pacific Standard Time)",
+      "updated_at": "13:52:47 GMT-0800 (Pacific Standard Time)",
+      "api_token": "",
+      "phone": "1234512345",
+      "password": "12345"
+    },
+    {
+      "id": 12,
+      "name": "23456 2345",
+      "email": "23456@gmail.com",
+      "email_verified_at": "FoodOrb",
+      "created_at": "13:56:36 GMT-0800 (Pacific Standard Time)",
+      "updated_at": "13:56:36 GMT-0800 (Pacific Standard Time)",
+      "api_token": "",
+      "phone": "1234567890",
+      "password": "12345"
+    },
+    {
+      "id": 13,
+      "name": "1234 1234",
+      "email": "12345@gmail.com",
+      "email_verified_at": "FoodOrb",
+      "created_at": "14:14:08 GMT-0800 (Pacific Standard Time)",
+      "updated_at": "14:14:08 GMT-0800 (Pacific Standard Time)",
+      "api_token": "",
+      "phone": "1343222222",
+      "password": "12345"
+    },
+    {
+      "id": 14,
+      "name": "Rhosung Park",
+      "email": "rhosungpark@gmail.com",
+      "email_verified_at": "FoodOrb",
+      "created_at": "14:54:52 GMT-0800 (Pacific Standard Time)",
+      "updated_at": "14:54:52 GMT-0800 (Pacific Standard Time)",
+      "api_token": "",
+      "phone": "1234567890",
+      "password": "12345"
+    },
+    {
+      "id": 15,
+      "name": "Random Name",
+      "email": "random@gmail.com",
+      "email_verified_at": "FoodOrb",
+      "created_at": "20:25:35 GMT-0800 (Pacific Standard Time)",
+      "updated_at": "20:25:35 GMT-0800 (Pacific Standard Time)",
+      "api_token": "",
+      "phone": "9097771111",
+      "password": "12345"
+    },
+    {
+      "id": 16,
+      "name": "More Random",
+      "email": "morerandom@gmail.com",
+      "email_verified_at": "FoodOrb",
+      "created_at": "20:26:10 GMT-0800 (Pacific Standard Time)",
+      "updated_at": "20:26:10 GMT-0800 (Pacific Standard Time)",
+      "api_token": "",
+      "phone": "1234512451",
+      "password": "12345"
+    },
+    {
+      "id": 17,
+      "name": "hoho hoho",
+      "email": "rhosungparr@gmail.com",
+      "email_verified_at": "FoodOrb",
+      "created_at": "20:56:41 GMT-0800 (Pacific Standard Time)",
+      "updated_at": "20:56:41 GMT-0800 (Pacific Standard Time)",
+      "api_token": "",
+      "phone": "9097443444",
+      "password": "12345"
+    },
+    {
+      "id": 18,
+      "name": "node js",
+      "email": "node@gmail.com",
+      "email_verified_at": "FoodOrb",
+      "created_at": "07:44:47 GMT-0700 (Pacific Daylight Time)",
+      "updated_at": "07:44:47 GMT-0700 (Pacific Daylight Time)",
+      "api_token": "",
+      "phone": "1111111111",
+      "password": "12345"
+    },
+    {
+      "id": 19,
+      "name": "test account",
+      "email": "testaccount@gmail.com",
+      "email_verified_at": "FoodOrb",
+      "created_at": "07:55:03 GMT-0700 (Pacific Daylight Time)",
+      "updated_at": "07:55:03 GMT-0700 (Pacific Daylight Time)",
+      "api_token": "",
+      "phone": "9999999999",
+      "password": "12345"
+    },
+    {
+      "id": 20,
+      "name": "hhh hhh",
+      "email": "hhhhhh@gmail.com",
+      "email_verified_at": "FoodOrb",
+      "created_at": "08:17:16 GMT-0700 (Pacific Daylight Time)",
+      "updated_at": "08:17:16 GMT-0700 (Pacific Daylight Time)",
+      "api_token": "",
+      "phone": "1234567890",
+      "password": "12345"
+    },
+    {
+      "id": 21,
+      "name": "hi hello",
+      "email": "hihello@gmail.com",
+      "email_verified_at": "FoodOrb",
+      "created_at": "12:34:29 GMT-0700 (Pacific Daylight Time)",
+      "updated_at": "12:34:29 GMT-0700 (Pacific Daylight Time)",
+      "api_token": "",
+      "phone": "1234567345",
+      "password": "12345"
+    }
+  ],
+  "orders": [
+    {
+      "id": 3,
+      "userId": 14,
+      "created_at": "14:41:32 GMT-0700 (Pacific Daylight Time)",
+      "updated_at": "23:51:36 GMT-0700 (Pacific Daylight Time)",
+      "name": "Immunity Booster Chole Rice Bowl",
+      "restaurent_name": "The Good Bowl",
+      "quantity": 3,
+      "item_cost": "200",
+      "status": "DELIVERED",
+      "wait_time": 300
+    },
+    {
+      "id": 4,
+      "userId": 14,
+      "created_at": "14:45:56 GMT-0700 (Pacific Daylight Time)",
+      "updated_at": "14:45:56 GMT-0700 (Pacific Daylight Time)",
+      "name": "Chicken Momos",
+      "restaurent_name": "Mad Momos",
+      "quantity": 1,
+      "item_cost": "69",
+      "status": "DELIVERED",
+      "wait_time": 300
+    },
+    {
+      "id": 5,
+      "userId": 14,
+      "created_at": "15:01:29 GMT-0700 (Pacific Daylight Time)",
+      "updated_at": "15:01:29 GMT-0700 (Pacific Daylight Time)",
+      "name": "Cheese Chilli Toast",
+      "restaurent_name": "Cafe Peter",
+      "quantity": 1,
+      "item_cost": "250",
+      "status": "DELIVERED",
+      "wait_time": 300
+    },
+    {
+      "id": 6,
+      "userId": 17,
+      "created_at": "02:41:43 GMT-0700 (Pacific Daylight Time)",
+      "updated_at": "02:41:43 GMT-0700 (Pacific Daylight Time)",
+      "name": "Cajun Spiced Chicken",
+      "restaurent_name": "Kabablo",
+      "quantity": 1,
+      "item_cost": "260",
+      "status": "DELIVERED",
+      "wait_time": 300
+    },
+    {
+      "id": 7,
+      "userId": 19,
+      "created_at": "08:16:38 GMT-0700 (Pacific Daylight Time)",
+      "updated_at": "08:16:38 GMT-0700 (Pacific Daylight Time)",
+      "name": "Roasted Chicken Biryani",
+      "restaurent_name": "Reddys Biryani Zone",
+      "quantity": 1,
+      "item_cost": "190",
+      "status": "in_cart",
+      "wait_time": 300
+    },
+    {
+      "id": 8,
+      "userId": 14,
+      "created_at": "13:20:04 GMT-0700 (Pacific Daylight Time)",
+      "updated_at": "13:20:04 GMT-0700 (Pacific Daylight Time)",
+      "name": "Chicken Pakora",
+      "restaurent_name": "Hotel Malabar",
+      "quantity": 1,
+      "item_cost": "145",
+      "status": "DELIVERED",
+      "wait_time": 300
+    },
+    {
+      "id": 9,
+      "userId": 14,
+      "created_at": "",
+      "updated_at": "",
+      "name": "Cajun Spiced Chicken",
+      "restaurent_name": "Kabablo",
+      "quantity": 1,
+      "item_cost": "260",
+      "status": "DELIVERED",
+      "wait_time": 300
+    },
+    {
+      "id": 10,
+      "userId": 14,
+      "created_at": "",
+      "updated_at": "",
+      "name": "Cajun Spiced Chicken",
+      "restaurent_name": "Kabablo",
+      "quantity": 1,
+      "item_cost": "260",
+      "status": "DELIVERED",
+      "wait_time": 300
+    },
+    {
+      "id": 11,
+      "userId": 14,
+      "created_at": "",
+      "updated_at": "",
+      "name": "Cajun Spiced Chicken",
+      "restaurent_name": "Kabablo",
+      "quantity": 1,
+      "item_cost": "260",
+      "status": "DELIVERED",
+      "wait_time": 300
+    },
+    {
+      "id": 12,
+      "userId": 14,
+      "created_at": "",
+      "updated_at": "",
+      "name": "Roasted Chicken Biryani",
+      "restaurent_name": "Reddys Biryani Zone",
+      "quantity": 1,
+      "item_cost": "190",
+      "status": "DELIVERED",
+      "wait_time": 300
+    },
+    {
+      "id": 13,
+      "userId": 14,
+      "created_at": "",
+      "updated_at": "",
+      "name": "Immunity Booster Chole Rice Bowl",
+      "restaurent_name": "The Good Bowl",
+      "quantity": 1,
+      "item_cost": "200",
+      "status": "DELIVERED",
+      "wait_time": 300
+    },
+    {
+      "id": 14,
+      "userId": 17,
+      "created_at": "",
+      "updated_at": "",
+      "name": "Cajun Spiced Chicken",
+      "restaurent_name": "Kabablo",
+      "quantity": 1,
+      "item_cost": "260",
+      "status": "DELIVERED",
+      "wait_time": 300
+    },
+    {
+      "id": 15,
+      "userId": 17,
+      "created_at": "23:41:57 GMT-0700 (Pacific Daylight Time)",
+      "updated_at": "23:41:57 GMT-0700 (Pacific Daylight Time)",
+      "name": "Cajun Spiced Chicken",
+      "restaurent_name": "Kabablo",
+      "quantity": 1,
+      "item_cost": "260",
+      "status": "DELIVERED",
+      "wait_time": 300
+    },
+    {
+      "id": 16,
+      "userId": 17,
+      "created_at": "23:44:17 GMT-0700 (Pacific Daylight Time)",
+      "updated_at": "23:44:17 GMT-0700 (Pacific Daylight Time)",
+      "name": "Cajun Spiced Chicken",
+      "restaurent_name": "Kabablo",
+      "quantity": 1,
+      "item_cost": "260",
+      "status": "DELIVERED",
+      "wait_time": 300
+    },
+    {
+      "id": 17,
+      "userId": 17,
+      "created_at": "23:45:48 GMT-0700 (Pacific Daylight Time)",
+      "updated_at": "23:45:48 GMT-0700 (Pacific Daylight Time)",
+      "name": "Cheese Chilli Toast",
+      "restaurent_name": "Cafe Peter",
+      "quantity": 1,
+      "item_cost": "250",
+      "status": "DELIVERED",
+      "wait_time": 300
+    },
+    {
+      "id": 18,
+      "userId": 17,
+      "created_at": "23:49:16 GMT-0700 (Pacific Daylight Time)",
+      "updated_at": "23:49:16 GMT-0700 (Pacific Daylight Time)",
+      "name": "Cajun Spiced Chicken",
+      "restaurent_name": "Kabablo",
+      "quantity": 1,
+      "item_cost": "260",
+      "status": "DELIVERED",
+      "wait_time": 300
+    },
+    {
+      "id": 19,
+      "userId": 17,
+      "created_at": "23:51:06 GMT-0700 (Pacific Daylight Time)",
+      "updated_at": "23:51:06 GMT-0700 (Pacific Daylight Time)",
+      "name": "Cajun Spiced Chicken",
+      "restaurent_name": "Kabablo",
+      "quantity": 1,
+      "item_cost": "260",
+      "status": "DELIVERED",
+      "wait_time": 300
+    },
+    {
+      "id": 20,
+      "userId": 14,
+      "created_at": "23:51:33 GMT-0700 (Pacific Daylight Time)",
+      "updated_at": "23:51:33 GMT-0700 (Pacific Daylight Time)",
+      "name": "Cajun Spiced Chicken",
+      "restaurent_name": "Kabablo",
+      "quantity": 1,
+      "item_cost": "260",
+      "status": "DELIVERED",
+      "wait_time": 300
+    }
+  ],
+  "friends": [
+    {
+      "userId": 14,
+      "friendId": 1,
+      "status": "request_sent",
+      "id": 1
+    },
+    {
+      "userId": 1,
+      "friendId": 14,
+      "status": "request_received",
+      "id": 2
+    },
+    {
+      "userId": 14,
+      "friendId": 17,
+      "status": "friends",
+      "id": 3
+    },
+    {
+      "userId": 17,
+      "friendId": 14,
+      "status": "friends",
+      "id": 4
+    },
+    {
+      "userId": 17,
+      "friendId": 18,
+      "status": "friends",
+      "id": 5
+    },
+    {
+      "userId": 18,
+      "friendId": 17,
+      "status": "friends",
+      "id": 6
+    },
+    {
+      "userId": 18,
+      "friendId": 20,
+      "status": "friends",
+      "id": 7
+    },
+    {
+      "userId": 20,
+      "friendId": 18,
+      "status": "friends",
+      "id": 8
+    },
+    {
+      "userId": 20,
+      "friendId": 17,
+      "status": "friends",
+      "id": 9
+    },
+    {
+      "userId": 17,
+      "friendId": 20,
+      "status": "friends",
+      "id": 10
+    },
+    {
+      "userId": 17,
+      "friendId": 19,
+      "status": "friends",
+      "id": 11
+    },
+    {
+      "userId": 19,
+      "friendId": 17,
+      "status": "friends",
+      "id": 12
+    },
+    {
+      "userId": 21,
+      "friendId": 14,
+      "status": "friends",
+      "id": 13
+    },
+    {
+      "userId": 14,
+      "friendId": 21,
+      "status": "friends",
+      "id": 14
+    },
+    {
+      "userId": 14,
+      "friendId": 20,
+      "status": "friends",
+      "id": 15
+    },
+    {
+      "userId": 20,
+      "friendId": 14,
+      "status": "friends",
+      "id": 16
+    },
+    {
+      "userId": 20,
+      "friendId": 19,
+      "status": "friends",
+      "id": 17
+    },
+    {
+      "userId": 19,
+      "friendId": 20,
+      "status": "friends",
+      "id": 18
+    },
+    {
+      "userId": 19,
+      "friendId": 14,
+      "status": "friends",
+      "id": 19
+    },
+    {
+      "userId": 14,
+      "friendId": 19,
+      "status": "friends",
+      "id": 20
+    },
+    {
+      "userId": 14,
+      "friendId": 5,
+      "status": "request_sent",
+      "id": 21
+    },
+    {
+      "userId": 5,
+      "friendId": 14,
+      "status": "request_received",
+      "id": 22
+    },
+    {
+      "userId": 14,
+      "friendId": 2,
+      "status": "request_sent",
+      "id": 23
+    },
+    {
+      "userId": 2,
+      "friendId": 14,
+      "status": "request_received",
+      "id": 24
+    }
+  ]
+}
